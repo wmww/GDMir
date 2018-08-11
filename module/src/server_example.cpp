@@ -120,7 +120,7 @@ catch (...)
 }
 }
 
-int main(int argc, char const* argv[])
+int mir_server_main(int argc, char const* argv[])
 try
 {
     miral::MirRunner runner{argc, argv, "mir/mir_demo_server.config"};

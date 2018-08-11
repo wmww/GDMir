@@ -15,6 +15,7 @@ public:
     void add(int value);
     void reset();
     int get_total() const;
+    void start_mir_server();
 
     GDMir();
 };

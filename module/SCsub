@@ -2,7 +2,8 @@
 Import('env')
 module_env = env.Clone()
 
-src_list = ['register_types.cpp', 'gdmir.cpp', Glob('src/*.cpp')]
-module_env.add_source_files(env.modules_sources, src_list)
 module_env.Append(CXXFLAGS=['-std=c++14'])
 module_env.ParseConfig('pkg-config --cflags --libs miral mirserver')
+
+src_list = ['register_types.cpp', 'gdmir.cpp', Glob('src/*.cpp')]
+module_env.add_source_files(env.modules_sources, src_list)
