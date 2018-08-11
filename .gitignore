@@ -1,2 +1,10 @@
+# Python (SCons)
 *.pyc
+
+# C++
 *.o
+
+# Godot
+*.import/
+*export.cfg
+*export_presets.cfg
