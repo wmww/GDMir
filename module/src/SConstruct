@@ -1,0 +1,5 @@
+
+env = Environment()
+env.Append(CXXFLAGS=['-std=c++14'])
+env.ParseConfig('pkg-config --libs --cflags freetype2 miral mirserver')
+env.Program(target='run', source=Glob('*.cpp'))

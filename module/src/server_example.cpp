@@ -16,7 +16,6 @@
  * Authored by: Alan Griffiths <alan@octopull.co.uk>
  */
 
-#include "server_example_log_options.h"
 #include "server_example_input_event_filter.h"
 #include "server_example_input_filter.h"
 #include "server_example_host_lifecycle_event_listener.h"
@@ -145,7 +144,6 @@ try
         // example options for display layout, logging and timeout
         miral::display_configuration_options,
         me::add_log_host_lifecycle_option_to,
-        me::add_glog_options_to,
         miral::StartupInternalClient{"Intro", spinner},
         miral::X11Support{},
         launcher,
