@@ -1,6 +1,10 @@
 #include "gdmir.h"
 #include <thread>
 
+const char* cmd_line_args[] {
+    ""
+};
+
 int mir_server_main(int argc, char const* argv[]);
 
 void GDMir::add(int value) {
@@ -20,7 +24,14 @@ int GDMir::get_total() const {
 
 void GDMir::start_mir_server() {
     new std::thread{[](){
-        mir_server_main(0, nullptr);
+        try
+        {
+            mir_server_main(sizeof(cmd_line_args) / sizeof(cmd_line_args[0]), cmd_line_args);
+        }
+        catch (...)
+        {
+
+        }
     }};
 }
 
