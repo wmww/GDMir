@@ -1,7 +1,7 @@
 #ifndef GDMIR_H
 #define GDMIR_H
 
-#include "reference.h"
+#include "core/reference.h"
 
 class GDMir : public Reference {
     GDCLASS(GDMir, Reference);

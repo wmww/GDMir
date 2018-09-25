@@ -1,7 +1,7 @@
 /* register_types.cpp */
 
 #include "register_types.h"
-#include "class_db.h"
+#include "core/class_db.h"
 #include "gdmir.h"
 
 void register_gdmir_types() {

@@ -1,5 +1,6 @@
 # Python (SCons)
 *.pyc
+*.sconsign.dblite
 
 # C++
 *.o
@@ -11,3 +12,4 @@
 
 # binary
 /bin/
+*_bin
